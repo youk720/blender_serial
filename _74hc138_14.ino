@@ -12,6 +12,8 @@ void setup(){
   Serial.begin(9600);
   }
 
+  //コミット用
+
 void loop(){
   val1 = digitalRead(button_up);
   val2 = digitalRead(button_down);
