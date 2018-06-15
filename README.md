@@ -5,4 +5,4 @@
 
 ## 起動用
  - 下はターミナルからblenderを開いて、エラー等をターミナルに出すことができる
- - '/Applications/Blender/blender.app/Contents/MacOS/blender'
+ - `/Applications/Blender/blender.app/Contents/MacOS/blender`
