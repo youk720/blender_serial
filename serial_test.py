@@ -10,9 +10,7 @@ ser = serial.Serial("/dev/tty.usbmodem14111", 9600)
 x = ser.readline()
 value = 0
 
-while True:
-    # print(x)
-    #
+while x == b'3\r\n':
     if x == b'1\r\n':
         value = value + 0.5
         value = round(value, 3)
@@ -20,7 +18,7 @@ while True:
         bpy.context.object.rotation_euler[2] = value
         time.sleep(0.1)
 
-    if x == b'2\r\n':
+    elif x == b'2\r\n':
         value = value - 0.5
         value = round(value, 3)
         print(value)
