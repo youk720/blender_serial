@@ -6,3 +6,7 @@
 ## 起動用
  - 下はターミナルからblenderを開いて、エラー等をターミナルに出すことができる
  - `/Applications/Blender/blender.app/Contents/MacOS/blender`
+
+
+### 参考サイト
+ - http://nn-hokuson.hatenablog.com/entry/2017/03/26/102145
