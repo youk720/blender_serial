@@ -10,3 +10,5 @@
 
 ### 参考サイト
  - http://nn-hokuson.hatenablog.com/entry/2017/03/26/102145
+ - 文字コード削除→ https://qiita.com/moritama1515/items/bc37c3d7d5280c877950
+ - 
