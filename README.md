@@ -38,12 +38,9 @@
  - arduinoのシリアルポートは機材によって異なります。それぞれ各自のものに合わせて修正してください
       1. コマンドプロンプトに`ls /dev/ *`を実行.windowsの場合は[こちらを](https://qiita.com/Acqua_Alta/items/9f19afddc6db1e4d4286#pc--arduino%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E9%80%9A%E4%BF%A1)
     2.  arduinoのツールタブにある`シリアルポート`のリンクと一致するものを[blender_rokuro_over.py](https://github.com/youk720/BlenderRokuro/blob/master/blender_rokuro_over.py)126行目の`/dev....`の中に入れて置き換える
-<img src="/photo/image_1.PNG" width="317px"height="127px">
-<img src="/photo/image_2.PNG" width="251px"height="117px">
-<img src="/photo/image_3.PNG" width="207px"height="119px">
- <!-- ![1](/photo/image_1.PNG  =317x127)
- ![2](/photo/image_2.PNG  =251x117)
- ![3](/photo/image_3.PNG  =207x119) -->
+ ![1](/photo/image_1.PNG)
+ ![2](/photo/image_2.PNG)
+ ![3](/photo/image_3.PNG)
 
 ### blender側
 1. アドオンをインストールして有効にします
