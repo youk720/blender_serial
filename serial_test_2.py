@@ -24,8 +24,9 @@ try:
 
 except KeyboardInterrupt:
     print(" ")
-    print('interrupted!')
+    print('反映!')
     print(bpy.context.object.rotation_euler[2] * 57.3)
+    # 上の掛け算をしないと,角度とほぼ同じ値にならない※ただしblender側とは誤差あり
 
 pass
 ser.close()
