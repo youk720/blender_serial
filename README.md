@@ -40,6 +40,7 @@
     2.  arduinoのツールタブにある`シリアルポート`のリンクと一致するものを[blender_rokuro_over.py](https://github.com/youk720/BlenderRokuro/blob/master/blender_rokuro_over.py)126行目の`/dev....`の中に入れて置き換える
  ![1](/photo/image_1.PNG)
  ![2](/photo/image_2.PNG)
+ ![3](/photo/image_3.PNG)
 
 ### blender側
 1. アドオンをインストールして有効にします
