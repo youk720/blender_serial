@@ -28,6 +28,20 @@
 * 時間のステップ数の選択
 
 ## 使い方
+
+### arduino側
+1. rotary_blenderのフォルダ内のinoファイルをarduinoに書き込む
+2. a相(右回り)はD2,b相(左回り)はD3ピンに接続
+3. D6,7ピンはLEDをさすピンで必要なければつけなくても良い(6は左に回したときに,7は右に回したときに光る)
+#### ⚠️注意⚠️
+ - LED刺すときには,故障防止のため,"必ず" 直前に抵抗を挟んでください
+ - arduinoのシリアルポートは機材によって異なります。それぞれ各自のものに合わせて修正してください
+      1. コマンドプロンプトに`ls /dev/ *`を実行.windowsの場合は[こちらを](https://qiita.com/Acqua_Alta/items/9f19afddc6db1e4d4286#pc--arduino%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E9%80%9A%E4%BF%A1)
+    2.  arduinoのツールタブにある`シリアルポート`のリンクと一致するものを[blender_rokuro_over.py](https://github.com/youk720/BlenderRokuro/blob/master/blender_rokuro_over.py)126行目の`/dev....`の中に入れて置き換える
+ ![1](/photo/image_1.PNG)
+ ![2](/photo/image_2.PNG)
+
+### blender側
 1. アドオンをインストールして有効にします
 2. メッシュを選択してスカルプトモードにします
 3. ツールシェルフに "Rokuro" パネルが開きます
@@ -52,12 +66,14 @@
 ## 既知のバグ
 * 回転前の Rotation 値が戻らないことがあります
 * "Enable Rokuro"クリック後,シリアル通信(?)の関係でロータリーエンコーダ操作しながらでないと、停止やチェックボックスなどの操作ができない
+* ロータリーエンコーダの構造上,arduinoで読み取りに誤差があり,そのためblenderやLEDに本来光らない・反応しない側に入ることが多い
 
 ## 参考サイト
 - http://nn-hokuson.hatenablog.com/entry/2017/03/26/102145
 - 文字コード削除→ https://qiita.com/moritama1515/items/bc37c3d7d5280c877950
+- https://qiita.com/Acqua_Alta/items/9f19afddc6db1e4d4286
 
 
-###製作者
+### 製作者
 - 元データ:[Yuichi sato様](https://github.com/satoyuichi)
 - ロータリーエンコーダ操作対応作成:[youk720(自分)](https://github.com/youk720)
