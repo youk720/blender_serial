@@ -1,8 +1,9 @@
 volatile int value = 0;
 volatile uint8_t prev = 0;
 
-#define led_1 6
-#define led_2  7
+#define led_1 7
+#define led_2 6
+#define sw 5
 
 void setup()
 {
@@ -10,6 +11,7 @@ void setup()
   pinMode(3, INPUT);
   pinMode(led_1, OUTPUT);
   pinMode(led_2, OUTPUT);
+  pinMode(sw, INPUT);
 
   attachInterrupt(0, updateEncoder, CHANGE);
   attachInterrupt(1, updateEncoder, CHANGE);
@@ -35,7 +37,7 @@ void updateEncoder()
     digitalWrite(led_1, LOW);
     digitalWrite(led_2, LOW);
 
-  } else if(encoded == 0b1110 || encoded == 0b0111 || encoded == 0b0001 || encoded == 0b1000) {
+  } else if(encoded == 0b1110 || encoded == 0b0111 || encoded == 0b0001 || encoded == 0b1000){
     Serial.println("-0.5");
     digitalWrite(led_1, LOW);
     digitalWrite(led_2, HIGH);
@@ -43,10 +45,17 @@ void updateEncoder()
     digitalWrite(led_1, LOW);
     digitalWrite(led_2, LOW);
   }
-
+  sw_t();
   prev = ab;
 }
 
 void loop()
-{
+{}
+
+void sw_t(){
+
+if(sw == HIGH){
+    Serial.println("stop");
+    }else if(sw == LOW){  
+      }
 }
